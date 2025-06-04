@@ -34,12 +34,6 @@ class Planet {
       
       velx += (velhyp*cos(angle)*pl.m) / (sq(dist(x,y,pl.x,pl.y)*100));
       vely += (velhyp*sin(angle)*pl.m) / (sq(dist(x,y,pl.x,pl.y)*100));
-      
-      if (dist(x,y,pl.x,pl.y) <= pl.s/2) {
-        s = sqrt(m+pl.m);
-        m += pl.m;
-        planet.remove(i);
-      }//if
       }//if
     }//for
   }//planetcalc
